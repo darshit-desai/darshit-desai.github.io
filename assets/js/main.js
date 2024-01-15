@@ -108,22 +108,22 @@
   });
 
   // Testimonials carousel (uses the Owl Carousel library)
-  $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 2
-      },
-      900: {
-        items: 3
-      }
-    }
-  });
+  // $(".testimonials-carousel").owlCarousel({
+  //   autoplay: true,
+  //   dots: true,
+  //   loop: true,
+  //   responsive: {
+  //     0: {
+  //       items: 1
+  //     },
+  //     768: {
+  //       items: 2
+  //     },
+  //     900: {
+  //       items: 3
+  //     }
+  //   }
+  // });
 
   // Porfolio isotope and filter
   $(window).on('load', function() {
@@ -151,11 +151,61 @@
   });
 
   // Portfolio details carousel
-  $(".portfolio-details-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
-  });
+  // $(".portfolio-details-carousel").owlCarousel({
+  //   autoplay: true,
+  //   dots: true,
+  //   loop: true,
+  //   items: 1
+  // });
 
 })(jQuery);
+
+// let allVids = $("#myCarousel").find('.carousel-item');
+
+// allVids.each(function(index, el) {
+//   if (index !== 0) {
+//     $(this).find('video')[0].pause();
+//   }
+// });
+
+// $("#myCarousel").on('slide.bs.carousel', function(ev) {
+//   let slides = $(this).find('.carousel-item');
+//   let pvid = slides[ev.from].querySelectorAll('video')[0];
+//   let vid = slides[ev.to].querySelectorAll('video')[0];
+//   let isPlaying = vid.currentTime > 0 && vid.readyState > 2;
+
+//   vid.play();
+
+//   if (isPlaying) {
+//     pvid.pause();
+//   }
+// });
+
+let allVids = $("#myCarousel").find('.carousel-item');
+
+allVids.each(function(index, el) {
+  if (index !== 0) {
+    $(this).find('video')[0].pause();
+  }
+});
+
+$("#myCarousel").on('slide.bs.carousel', function(ev) {
+  let slides = $(this).find('.carousel-item');
+  let pvid = slides[ev.from].querySelectorAll('video')[0];
+  let vid = slides[ev.to].querySelectorAll('video')[0];
+  let isPlaying = vid.currentTime > 0 && vid.readyState > 2;
+
+  // Pause the previous video if it's still playing
+  if (isPlaying) {
+    pvid.pause();
+  }
+
+  // Play the current video
+  vid.play();
+
+  // Attach the 'ended' event to the current video
+  $(vid).on('ended', function() {
+    // When the current video ends, move to the next slide
+    $('#myCarousel').carousel('next');
+  });
+});
