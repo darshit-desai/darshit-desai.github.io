@@ -200,7 +200,7 @@ $("#myCarousel").on('slide.bs.carousel', function(ev) {
     pvid.pause();
   }
 
-  // Play the current video
+  // Play the current video 
   vid.play();
 
   // Attach the 'ended' event to the current video
