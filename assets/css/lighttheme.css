@@ -59,6 +59,7 @@ body {
 .carousel-control-next, .carousel-control-prev {
   width: 12% !important;
   z-index: 1;
+  top: 50%;
 }
 
 .carousel-inner {
@@ -66,7 +67,7 @@ body {
 }
 
 .carousel-indicators {
-  bottom: -0px !important;
+  bottom: 100px !important;
 }
 
 .carousel-item {
@@ -110,6 +111,8 @@ video {
 
   .carousel-control-next, .carousel-control-prev {
     width: 20% !important; /* Adjust the width for smaller screens */
+    z-index: 1;
+    top: 50%;
   }
 }
 
@@ -169,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   z-index: 1997;
   overflow-y: auto;
-  opacity: 1;
+  opacity: 0.5;
   box-shadow: 0 20px 20px 0 rgba(0,0,0,.2);
 
 
@@ -1301,7 +1304,7 @@ section .container {
   font-size: 32px;
   color: #fff;
   z-index: 999;
-  opacity: 1;
+  opacity: 0.4;
   box-shadow: 20px 20px 20px 20px rgba(0,0,0,.2);
 
 }
