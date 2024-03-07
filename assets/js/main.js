@@ -209,3 +209,27 @@ $("#myCarousel").on('slide.bs.carousel', function(ev) {
     $('#myCarousel').carousel('next');
   });
 });
+
+$(document).ready(function () {
+  // Array of texts for each slide
+  var slideTexts = [
+    "Drone Swarms",
+    "Object Tracking"
+    // Add more texts for additional slides if needed
+  ];
+
+  // Function to update text based on the current slide
+  function updateTextBasedOnSlide(slideIndex) {
+    $("#slideText").text(slideTexts[slideIndex]);
+  }
+
+  // Event listener for carousel slide change
+  $("#myCarousel").on("slide.bs.carousel", function (event) {
+    var slideIndex = event.to;
+    updateTextBasedOnSlide(slideIndex);
+  });
+
+  // Initialize text for the first slide
+  updateTextBasedOnSlide(0);
+});
+
