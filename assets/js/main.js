@@ -236,8 +236,8 @@ $("#myCarousel").on('slide.bs.carousel', function(ev) {
 $(document).ready(function () {
   // Array of texts and corresponding links for each slide
   var slideTexts = [
-    { text: "Drone Swarms", link: "https://example.com/drone_swarms" },
-    { text: "Object Tracking", link: "https://example.com/object_tracking" }
+    { text: "Drone Swarms", link: "https://github.com/darshit-desai/Project_LegionAir" },
+    { text: "Collision Avoidance", link: "https://github.com/darshit-desai/Dynamic-Obstacle-avoidance-on-drone/blob/master/ProjectReport_CollisionAvoidance.pdf" }
     // Add more objects for additional slides if needed
   ];
 
