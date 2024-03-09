@@ -210,17 +210,41 @@ $("#myCarousel").on('slide.bs.carousel', function(ev) {
   });
 });
 
+// $(document).ready(function () {
+//   // Array of texts for each slide
+//   var slideTexts = [
+//     "Drone Swarms",
+//     "Object Tracking"
+//     // Add more texts for additional slides if needed
+//   ];
+
+//   // Function to update text based on the current slide
+//   function updateTextBasedOnSlide(slideIndex) {
+//     $("#slideText").text(slideTexts[slideIndex]);
+//   }
+
+//   // Event listener for carousel slide change
+//   $("#myCarousel").on("slide.bs.carousel", function (event) {
+//     var slideIndex = event.to;
+//     updateTextBasedOnSlide(slideIndex);
+//   });
+
+//   // Initialize text for the first slide
+//   updateTextBasedOnSlide(0);
+// });
+
 $(document).ready(function () {
-  // Array of texts for each slide
+  // Array of texts and corresponding links for each slide
   var slideTexts = [
-    "Drone Swarms",
-    "Object Tracking"
-    // Add more texts for additional slides if needed
+    { text: "Drone Swarms", link: "https://example.com/drone_swarms" },
+    { text: "Object Tracking", link: "https://example.com/object_tracking" }
+    // Add more objects for additional slides if needed
   ];
 
-  // Function to update text based on the current slide
+  // Function to update text and link based on the current slide
   function updateTextBasedOnSlide(slideIndex) {
-    $("#slideText").text(slideTexts[slideIndex]);
+    var slide = slideTexts[slideIndex];
+    $("#slideText").html('<a href="' + slide.link + '">' + slide.text + '</a>');
   }
 
   // Event listener for carousel slide change
