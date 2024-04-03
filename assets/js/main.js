@@ -42,7 +42,8 @@
           $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
           $('.mobile-nav-overly').fadeOut();
         }
-
+        // Update URL hash without reloading the page
+        history.pushState(null, null, hash);
         return false;
 
       }
@@ -157,6 +158,18 @@
   //   loop: true,
   //   items: 1
   // });
+  // Permalink generation
+  $(window).on('load', function() {
+    // Check if there's a hash in the URL
+    if (window.location.hash) {
+      // Get the hash value
+      var hash = window.location.hash;
+      // Scroll to the corresponding section
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800);
+    }
+  });
 
 })(jQuery);
 
