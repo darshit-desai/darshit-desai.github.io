@@ -53,13 +53,15 @@
   // Activate/show sections on load with hash links
   if (window.location.hash) {
     var initial_nav = window.location.hash;
-    if ($(initial_nav).length) {
+    // Extract just the section ID, remove query parameters like ?filter=...
+    var sectionId = initial_nav.split('?')[0];
+    if ($(sectionId).length) {
       $('#header').addClass('header-top');
       $('.nav-menu .active, .mobile-nav .active').removeClass('active');
-      $('.nav-menu, .mobile-nav').find('a[href="' + initial_nav + '"]').parent('li').addClass('active');
+      $('.nav-menu, .mobile-nav').find('a[href="' + sectionId + '"]').parent('li').addClass('active');
       setTimeout(function() {
         $("section").removeClass('section-show');
-        $(initial_nav).addClass('section-show');
+        $(sectionId).addClass('section-show');
       }, 350);
     }
   }

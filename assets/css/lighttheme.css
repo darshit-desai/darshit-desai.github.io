@@ -1403,5 +1403,154 @@ section .container {
                 .25px .25px black;
 }
 
+/*--------------------------------------------------------------
+# Project Nuggets
+--------------------------------------------------------------*/
+.project-filters {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  border: 2px solid var(--themecolor);
+  background: transparent;
+  color: var(--themecolor);
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.filter-btn:hover {
+  background: var(--themecolor);
+  color: #fff;
+}
+
+.filter-btn.active {
+  background: var(--themecolor);
+  color: #fff;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.project-card {
+  /* reuse .icon-box look but allow left-aligned content */
+  text-align: left;
+  background: rgba(120, 120, 120, 0.06);
+  padding: 12px;
+  transition: all .15s ease-in-out;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+.project-card .img-fluid {
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+/* Ensure videos in project cards match image sizing */
+.project-card video {
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+  position: relative;
+}
+
+/* Filtering helper class to override Bootstrap display utilities */
+.filtered-out {
+  display: none !important;
+}
+
+.project-card .project-link {
+  display: block;
+  text-decoration: none;
+}
+
+.project-card .project-caption {
+  margin-top: 10px;
+}
+
+.project-card .project-caption h4 {
+  color: #333;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0 0 6px 0;
+}
+
+.project-card .project-caption p {
+  color: #666;
+  margin: 0;
+}
+
+.project-card:hover .project-caption h4,
+.project-card:hover .project-caption p {
+  color: #fff;
+}
+
+.project-card h4 {
+  font-weight: 700;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.project-card p {
+  color: #666;
+  margin-bottom: 0;
+}
+
+.project-card:hover {
+  background: var(--themecolor);
+  border-color: var(--themecolor);
+  color: #fff;
+}
+
+.project-card:hover h4,
+.project-card:hover p {
+  color: #fff;
+}
+
+.project-item {
+  transition: opacity 0.3s ease;
+}
+
+.project-item.hidden {
+  display: none;
+}
+
+.maze-carousel {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.maze-gif {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.maze-gif.hidden-gif {
+  opacity: 0;
+}
+
 
 
