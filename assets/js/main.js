@@ -10,7 +10,7 @@
   // Nav Menu
   $(document).on('click', '.nav-menu a, .mobile-nav a', function(e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var hash = this.hash;
+      var hash = this.hash.split('?')[0];
       var target = $(hash);
       if (target.length) {
         e.preventDefault();
@@ -164,12 +164,14 @@
   $(window).on('load', function() {
     // Check if there's a hash in the URL
     if (window.location.hash) {
-      // Get the hash value
-      var hash = window.location.hash;
+      // Get the hash value and strip query parameters
+      var hash = window.location.hash.split('?')[0];
       // Scroll to the corresponding section
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800);
+      if ($(hash).length) {
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800);
+      }
     }
   });
 
