@@ -80,7 +80,7 @@
   <section id="projects" class="services">
     <div class="container">
 
-      <div class="section-title">
+      <div class="section-title" id="robotics-projects">
         <h2></h2>
         <p>Robotics Projects (WIP)</p>
       </div>
@@ -98,8 +98,100 @@
 
       <div class="row projects-container">
 
-        
+        <!-- DRONE/AERIAL ROBOTICS PROJECTS -->
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="aerial-robotics computer-vision cpp-ros">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/Drone-following-an-April-tag-marker" target="_blank" rel="noopener">
+              <video class="project-media" src="https://user-images.githubusercontent.com/36150235/233714010-ac2abc61-8709-4a62-ab14-3d9c5cb1de47.mp4" autoplay muted loop playsinline style="padding-bottom: 15px; width: 100%; max-width: 100%; height: 200px; object-fit: cover;"></video>
+              <h4>Drone AprilTag Following</h4>
+              <p>A script written in C++ which allows a drone to follow AprilTag markers autonomously in offboard mode.</p>
+            </a>
+          </div>
+        </div>
 
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="aerial-robotics computer-vision">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/Dynamic-Obstacle-avoidance-on-drone" target="_blank" rel="noopener">
+              <div id="carouselObstacleAvoidance" class="carousel slide" data-ride="carousel" data-interval="5000" style="padding-bottom: 15px; height: 200px;">
+                <div class="carousel-inner" style="height: 100%;">
+                  <div class="carousel-item active" style="height: 100%;">
+                    <iframe class="d-block w-100" src="https://drive.google.com/file/d/1CIoyNgWWu8G3WIGNK27vNulFE5rQPRrN/preview" style="height: 200px; border: none;" allow="autoplay"></iframe>
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Obstacle Detection Demo 1</small>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 100%;">
+                    <iframe class="d-block w-100" src="https://drive.google.com/file/d/1QWkOVvuLJhIuwn3xV66v0VLGW5YdNQ2s/preview" style="height: 200px; border: none;" allow="autoplay"></iframe>
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Obstacle Detection Demo 2</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4>Dynamic Obstacle Avoidance</h4>
+              <p>Obstacle detection and localization using UV Depth segmentation method for drones.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="aerial-robotics cpp-ros">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/Offboard-CPP-code-controlling-drones-motion-simulated-in-PX4-Software-in-the-loop-simulation" target="_blank" rel="noopener">
+              <div id="carouselOffboardCPP" class="carousel slide" data-ride="carousel" data-interval="4000" style="padding-bottom: 15px; height: 200px;">
+                <div class="carousel-inner" style="height: 100%;">
+                  <div class="carousel-item active" style="height: 100%;">
+                    <video class="d-block w-100" src="https://github.com/darshit-desai/Offboard-CPP-code-controlling-drones-motion-simulated-in-PX4-Software-in-the-loop-simulation/raw/main/img/StartupandTakeoff.mp4" autoplay muted loop playsinline style="height: 200px; object-fit: cover;"></video>
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Startup & Takeoff</small>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 100%;">
+                    <video class="d-block w-100" src="https://github.com/darshit-desai/Offboard-CPP-code-controlling-drones-motion-simulated-in-PX4-Software-in-the-loop-simulation/raw/main/img/Offboard.mp4" autoplay muted loop playsinline style="height: 200px; object-fit: cover;"></video>
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Offboard Mode Switch</small>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 100%;">
+                    <video class="d-block w-100" src="https://user-images.githubusercontent.com/36150235/220215202-60eda11b-9be9-4d62-874e-7adf1d3bc246.mp4" autoplay muted loop playsinline style="height: 200px; object-fit: cover;"></video>
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Failsafe & Landing</small>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 100%;">
+                    <video class="d-block w-100" src="https://user-images.githubusercontent.com/36150235/221117418-716b20f9-fa73-44ca-83fc-5621448eb454.mp4" autoplay muted loop playsinline style="height: 200px; object-fit: cover;"></video>
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>M500 MODAL AI VOXL</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4>PX4 Offboard Control</h4>
+              <p>Offboard C++ code controlling drone motion simulated in PX4 Software-in-the-Loop simulation.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="swarm-systems aerial-robotics computer-vision">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/Project_LegionAir" target="_blank" rel="noopener">
+              <iframe class="project-media" src="https://www.youtube.com/embed/9gGAZJ9oBok?autoplay=1&mute=1&loop=1&playlist=9gGAZJ9oBok&controls=0&modestbranding=1&showinfo=0&rel=0" style="padding-bottom: 15px; width: 100%; height: 200px; border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <h4>Project LegionAir</h4>
+              <p>Swarm robotics project on visual recognition based swarm control.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="aerial-robotics cpp-ros">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/Trajectory-control-of-Modal-AI-PX4-multicopter" target="_blank" rel="noopener">
+              <video class="project-media" src="https://user-images.githubusercontent.com/36150235/224882637-449511ff-a162-4ed3-808d-f52bcc4d40bb.mp4" autoplay muted loop playsinline style="padding-bottom: 15px; width: 100%; max-width: 100%; height: 200px; object-fit: cover;"></video>
+              <h4>Modal AI Trajectory Control</h4>
+              <p>Trajectory control of Modal AI PX4 multicopter with waypoint navigation.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- ROS2/C++ PROJECTS -->
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="path-planning cpp-ros">
           <div class="icon-box project-card">
             <a href="https://github.com/darshit-desai/Maze-Solver-simulation-using-Wall-Following-Algorithm-OOP" target="_blank" rel="noopener">
@@ -113,13 +205,584 @@
           </div>
         </div>
 
-        <!-- A* Path Planning project with inline MP4 animation -->
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="path-planning cpp-ros">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/A-star-algorithm-implementation-on-turtlebot" target="_blank" rel="noopener">
+              <div id="carousel-astar" class="carousel slide" data-ride="carousel" data-interval="5000">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <iframe class="d-block w-100" src="https://drive.google.com/file/d/10bTyNINxgjTzthHxWuQWrpToavQ3oYE_/preview" style="height: 200px; border: none;" allow="autoplay"></iframe>
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <p style="margin: 0; font-size: 0.9em;">A* Path Planning Simulation</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe class="d-block w-100" src="https://drive.google.com/file/d/1CogeNz_1oMfEI0HLiqVEK_8zdTByS0Ow/preview" style="height: 200px; border: none;" allow="autoplay"></iframe>
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <p style="margin: 0; font-size: 0.9em;">Turtlebot3 Navigation Demo</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4>A* on Turtlebot3</h4>
+              <p>A* algorithm implementation on Turtlebot3 simulated in ROS Noetic and Gazebo.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="cpp-ros">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/Acme-Ackerman-Controller" target="_blank" rel="noopener">
+              <img class="project-media" src="https://github.com/darshit-desai/Acme-Ackerman-Controller/blob/main/Results/Visualization/Velocity_vs_Time.png?raw=true" style="padding-bottom: 15px; width: 100%; max-width: 100%; height: 200px; object-fit: cover;" alt="Ackermann Controller">
+              <h4>Acme Ackermann Controller</h4>
+              <p>ENPM808X Mid-semester project on Ackermann Steering Controller using C++ dev, GitHub CI and Unit Testing.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="cpp-ros">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/ARIAC_Group3" target="_blank" rel="noopener">
+              <div id="carouselARIAC" class="carousel slide" data-ride="carousel" data-interval="4000" style="padding-bottom: 15px; height: 200px;">
+                <div class="carousel-inner" style="height: 100%;">
+                  <div class="carousel-item active" style="height: 100%;">
+                    <video class="d-block w-100" src="https://github.com/darshit-desai/ARIAC_Group3/assets/36150235/4231f15f-bb5f-4892-bf71-093cda9d9b6f" muted loop playsinline style="height: 200px; object-fit: cover;"></video>
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Kitting Orders: High Priority Interrupt</small>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 100%;">
+                    <video class="d-block w-100" src="https://github.com/darshit-desai/ARIAC_Group3/assets/36150235/bd2ccfd0-3223-4a48-a9ee-568d6aae4a1c" muted loop playsinline style="height: 200px; object-fit: cover;"></video>
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Gripper Fail & Faulty Part Challenge</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4>ARIAC Competition Group 3</h4>
+              <p>Agile Robotics for Industrial Automation Competition project.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="cpp-ros">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/ARROWBOT-MANIPULATOR-FOR-WAREHOUSE-AUTOMATION" target="_blank" rel="noopener">
+              <img class="project-media" src="https://github.com/vinay06vinay/ARROWBOT-MANIPULATOR-FOR-WAREHOUSE-AUTOMATION/blob/main/doc/robotpickplace.gif?raw=true" style="padding-bottom: 15px; width: 100%; max-width: 100%; height: 200px; object-fit: cover;" alt="Arrowbot">
+              <h4>Arrowbot Manipulator</h4>
+              <p>Wheeled manipulator designed and simulated to perform autonomous pick and place tasks in warehouse environments.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="cpp-ros">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/beginner_tutorials" target="_blank" rel="noopener">
+              <div id="carouselBeginnerTutorials" class="carousel slide" data-ride="carousel" data-interval="4000" style="padding-bottom: 15px; height: 200px;">
+                <div class="carousel-inner" style="height: 100%;">
+                  <div class="carousel-item active" style="height: 100%;">
+                    <img class="d-block w-100" src="https://raw.githubusercontent.com/darshit-desai/beginner_tutorials/ros_tf2_unitTest_bagFiles/results/Fatal_error.png" style="height: 200px; object-fit: cover;" alt="Fatal Error Test">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Fatal Error Test</small>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 100%;">
+                    <img class="d-block w-100" src="https://raw.githubusercontent.com/darshit-desai/beginner_tutorials/ros_tf2_unitTest_bagFiles/results/Serv_Error.png" style="height: 200px; object-fit: cover;" alt="Service Error Test">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Service Error Test</small>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 100%;">
+                    <img class="d-block w-100" src="https://raw.githubusercontent.com/darshit-desai/beginner_tutorials/ros_tf2_unitTest_bagFiles/results/warn_debugmsg.png" style="height: 200px; object-fit: cover;" alt="Warning & Debug">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Warning & Debug Messages</small>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 100%;">
+                    <img class="d-block w-100" src="https://raw.githubusercontent.com/darshit-desai/beginner_tutorials/ros_tf2_unitTest_bagFiles/results/ServiceCall.png" style="height: 200px; object-fit: cover;" alt="Service Call">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Service Call Terminal</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4>ROS2 Beginner Tutorials</h4>
+              <p>ROS2 ENPM808X assignment repository for beginner tutorials.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="cpp-ros">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/Modeling-and-Implementation-of-LQR-and-LQG-controller-for-Double-Pendulum-on-a-moving-cart-system" target="_blank" rel="noopener">
+              <div id="carousel-lqr-lqg" class="carousel slide" data-ride="carousel" data-interval="4000">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://raw.githubusercontent.com/darshit-desai/Modeling-and-Implementation-of-LQR-and-LQG-controller-for-Double-Pendulum-on-a-moving-cart-system/main/ResultPhotos/LTILQRControllerPlot.png" alt="LTI LQR Controller" style="height: 200px; object-fit: contain; background-color: white;">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <p style="margin: 0; font-size: 0.9em;">LTI LQR Controller Response</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://raw.githubusercontent.com/darshit-desai/Modeling-and-Implementation-of-LQR-and-LQG-controller-for-Double-Pendulum-on-a-moving-cart-system/main/ResultPhotos/NonLinearLQRControllerPlot.png" alt="NonLinear LQR Controller" style="height: 200px; object-fit: contain; background-color: white;">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <p style="margin: 0; font-size: 0.9em;">Nonlinear LQR Controller Response</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://raw.githubusercontent.com/darshit-desai/Modeling-and-Implementation-of-LQR-and-LQG-controller-for-Double-Pendulum-on-a-moving-cart-system/main/ResultPhotos/LinearX_theta1_theta2.png" alt="Linear System States" style="height: 200px; object-fit: contain; background-color: white;">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <p style="margin: 0; font-size: 0.9em;">Linear System: X, θ₁, θ₂ States</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://raw.githubusercontent.com/darshit-desai/Modeling-and-Implementation-of-LQR-and-LQG-controller-for-Double-Pendulum-on-a-moving-cart-system/main/ResultPhotos/PartGLQG.png" alt="LQG Controller" style="height: 200px; object-fit: contain; background-color: white;">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <p style="margin: 0; font-size: 0.9em;">LQG Controller with Observer</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://raw.githubusercontent.com/darshit-desai/Modeling-and-Implementation-of-LQR-and-LQG-controller-for-Double-Pendulum-on-a-moving-cart-system/main/ResultPhotos/PartGLQG_referencetrack.png" alt="LQG Reference Tracking" style="height: 200px; object-fit: contain; background-color: white;">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <p style="margin: 0; font-size: 0.9em;">LQG Reference Tracking Performance</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4>LQR & LQG Double Pendulum</h4>
+              <p>Modeling and implementation of LQR and LQG controllers for a double pendulum on a moving cart system.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="cpp-ros">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/Panda-Robot-Inverse-Dynamics-for-Circular-Trajectory" target="_blank" rel="noopener">
+              <div id="carousel-panda-dynamics" class="carousel slide" data-ride="carousel" data-interval="4000">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://raw.githubusercontent.com/darshit-desai/Panda-Robot-Inverse-Dynamics-for-Circular-Trajectory/main/Output/2d%20pen%20trajectory%20plot.png" alt="2D Y-Z Circular Trajectory" style="height: 200px; object-fit: contain; background-color: white;">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <p style="margin: 0; font-size: 0.9em;">2D Pen Trajectory - Y-Z Plane</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://raw.githubusercontent.com/darshit-desai/Panda-Robot-Inverse-Dynamics-for-Circular-Trajectory/main/Output/3d%20plot.png" alt="3D Trajectory Visualization" style="height: 200px; object-fit: contain; background-color: white;">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <p style="margin: 0; font-size: 0.9em;">3D Trajectory Visualization</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://raw.githubusercontent.com/darshit-desai/Panda-Robot-Inverse-Dynamics-for-Circular-Trajectory/main/Output/EndeffectorVelocitytrajectory.png" alt="End-Effector Velocity" style="height: 200px; object-fit: contain; background-color: white;">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <p style="margin: 0; font-size: 0.9em;">End-Effector Velocity Trajectory</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://raw.githubusercontent.com/darshit-desai/Panda-Robot-Inverse-Dynamics-for-Circular-Trajectory/main/Output/TorqueOutputsJoint1.png" alt="Joint 1 Torque" style="height: 200px; object-fit: contain; background-color: white;">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <p style="margin: 0; font-size: 0.9em;">Torque Outputs - Joint 1</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4>Panda Inverse Dynamics</h4>
+              <p>Dynamics modeling of the Panda robot to draw a circle on Y-Z Plane.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="cpp-ros">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/Panda-Robot-Inverse-Kinematics-for-Circular-Trajectory" target="_blank" rel="noopener">
+              <div id="carouselPandaKinematics" class="carousel slide" data-ride="carousel" data-interval="4000" style="padding-bottom: 15px; height: 200px;">
+                <div class="carousel-inner" style="height: 100%;">
+                  <div class="carousel-item active" style="height: 100%;">
+                    <img class="d-block w-100" src="https://raw.githubusercontent.com/darshit-desai/Panda-Robot-Inverse-Kinematics-for-Circular-Trajectory/main/Results/Y_Z_2dplot.png" style="height: 200px; object-fit: cover;" alt="2D Y-Z Plot">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>2D Y-Z Circular Trajectory</small>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 100%;">
+                    <img class="d-block w-100" src="https://raw.githubusercontent.com/darshit-desai/Panda-Robot-Inverse-Kinematics-for-Circular-Trajectory/main/Results/3dplot.png" style="height: 200px; object-fit: cover;" alt="3D X-Y-Z Plot">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>3D X-Y-Z Visualization</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4>Panda Inverse Kinematics</h4>
+              <p>Kinematics modeling of the Panda robot to draw a circle on Y-Z Plane.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="cpp-ros">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/ROS2-Turtlebot-control-using-Fiducial-markers" target="_blank" rel="noopener">
+              <div id="carouselFiducialMarkers" class="carousel slide" data-ride="carousel" data-interval="4000" style="padding-bottom: 15px; height: 200px;">
+                <div class="carousel-inner" style="height: 100%;">
+                  <div class="carousel-item active" style="height: 100%;">
+                    <img class="d-block w-100" src="https://github.com/darshit-desai/ROS2-Turtlebot-control-using-Fiducial-markers/blob/main/img/frames.png?raw=true" style="height: 200px; object-fit: cover;" alt="TF Tree">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>TF Tree: Robot Odom to World Frame</small>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 100%;">
+                    <img class="d-block w-100" src="https://github.com/darshit-desai/ROS2-Turtlebot-control-using-Fiducial-markers/blob/main/img/FrameCaptureInstance_rvizphotoorigin1arucomarker0.png?raw=true" style="height: 200px; object-fit: cover;" alt="ArUco Detection">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>ArUco Marker Detection in RViz</small>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 100%;">
+                    <img class="d-block w-100" src="https://github.com/darshit-desai/ROS2-Turtlebot-control-using-Fiducial-markers/blob/main/img/rviz_Robot_enroute_to_aruco_marker_0_location_origin1.png?raw=true" style="height: 200px; object-fit: cover;" alt="Robot Navigation">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Robot En Route to Target</small>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 100%;">
+                    <img class="d-block w-100" src="https://github.com/darshit-desai/ROS2-Turtlebot-control-using-Fiducial-markers/blob/main/img/arucoMarker2origin1Target.png?raw=true" style="height: 200px; object-fit: cover;" alt="Goal Reached">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Robot Reaches Final Destination</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4>ROS2 Turtlebot Fiducial Control</h4>
+              <p>Final project using ROS2 Galactic to control Turtlebot's motion using fiducial markers.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="swarm-systems cpp-ros">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/shape_shifters" target="_blank" rel="noopener">
+              <div id="carousel-shapeshifters" class="carousel slide" data-ride="carousel" data-interval="5000">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://github.com/darshit-desai/shape_shifters/blob/main/screenshots/Phase2_Results/circle.png?raw=true" alt="Shape Shifters Screenshot" style="height: 200px; object-fit: cover;">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <p style="margin: 0; font-size: 0.9em;">Swarm Formation - Circle Pattern</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe class="d-block w-100" src="https://drive.google.com/file/d/1JV5Ekqk49IMBG8rm_OknmwZ1YCozHkG_/preview" style="height: 200px; border: none;" allow="autoplay"></iframe>
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <p style="margin: 0; font-size: 0.9em;">Swarm Demonstration Video</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4>Shape Shifters</h4>
+              <p>ENPM808X Final Project on Ground Robot Swarm with C++ dev, GitHub CI and Integration Tests.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="cpp-ros">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/turtlebot_roomba" target="_blank" rel="noopener">
+              <img class="project-media" src="https://github.com/darshit-desai/turtlebot_roomba/blob/main/Results/Kazam_screencast_00095.gif?raw=true" style="padding-bottom: 15px; width: 100%; max-width: 100%; height: 200px; object-fit: cover;" alt="Turtlebot Roomba">
+              <h4>Turtlebot Roomba</h4>
+              <p>A repo for walking the Turtlebot around an obstacle map with roomba-style navigation.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- COMPUTER VISION PROJECTS -->
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="computer-vision">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/3D-Object-Classification-and-Segmentation-3D-Vision" target="_blank" rel="noopener">
+              <div id="carousel3DObjectClassification" class="carousel slide" data-ride="carousel" data-interval="3000" style="padding-bottom: 15px; height: 200px;">
+                <div class="carousel-inner" style="height: 100%;">
+                  <div class="carousel-item active" style="height: 100%;">
+                    <img class="d-block w-100" src="https://github.com/darshit-desai/3D-Object-Classification-and-Segmentation-3D-Vision/blob/main/output/cls/chair/batchidx0cls0Pred_chair_GT_chair.gif?raw=true" style="height: 200px; object-fit: cover;" alt="Chair Classification">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Classification: Chair ✓</small>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 100%;">
+                    <img class="d-block w-100" src="https://github.com/darshit-desai/3D-Object-Classification-and-Segmentation-3D-Vision/blob/main/output/cls/vases/batchidx19cls11Pred_vases_GT_vases.gif?raw=true" style="height: 200px; object-fit: cover;" alt="Vase Classification">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Classification: Vase ✓</small>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 100%;">
+                    <img class="d-block w-100" src="https://github.com/darshit-desai/3D-Object-Classification-and-Segmentation-3D-Vision/blob/main/output/cls/lamps/batchidx22cls15Pred_lamps_GT_lamps.gif?raw=true" style="height: 200px; object-fit: cover;" alt="Lamp Classification">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Classification: Lamp ✓</small>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 100%;">
+                    <img class="d-block w-100" src="https://github.com/darshit-desai/3D-Object-Classification-and-Segmentation-3D-Vision/blob/main/output/seg/success/gt_0_4.gif?raw=true" style="height: 200px; object-fit: cover;" alt="Segmentation GT">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Segmentation GT: Chair</small>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 100%;">
+                    <img class="d-block w-100" src="https://github.com/darshit-desai/3D-Object-Classification-and-Segmentation-3D-Vision/blob/main/output/seg/success/pred_0_4.gif?raw=true" style="height: 200px; object-fit: cover;" alt="Segmentation Pred">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Segmentation Pred: Chair</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4>3D Object Classification</h4>
+              <p>PointNet implementation for 3D object classification and recognition algorithm, part of the 3D vision course.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="computer-vision">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/3DVision-Single-View-to-3D" target="_blank" rel="noopener">
+              <div id="carouselSingleView" class="carousel slide" data-ride="carousel" data-interval="3000" style="padding-bottom: 15px; height: 200px;">
+                <div class="carousel-inner" style="height: 100%;">
+                  <div class="carousel-item active" style="height: 100%;">
+                    <img class="d-block w-100" src="https://github.com/darshit-desai/3DVision-Single-View-to-3D/blob/main/Results/Q2_1_final_vox.gif?raw=true" style="height: 200px; object-fit: cover;" alt="Voxel">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Voxel Reconstruction</small>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 100%;">
+                    <img class="d-block w-100" src="https://github.com/darshit-desai/3DVision-Single-View-to-3D/blob/main/Results/Q2_2_final_point.gif?raw=true" style="height: 200px; object-fit: cover;" alt="Point Cloud">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Point Cloud Reconstruction</small>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 100%;">
+                    <img class="d-block w-100" src="https://github.com/darshit-desai/3DVision-Single-View-to-3D/blob/main/Results/Q2_3_final_mesh.gif?raw=true" style="height: 200px; object-fit: cover;" alt="Mesh">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Mesh Reconstruction</small>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 100%;">
+                    <img class="d-block w-100" src="https://github.com/darshit-desai/3DVision-Single-View-to-3D/blob/main/Results/mesh.gif?raw=true" style="height: 200px; object-fit: cover;" alt="Mesh Result">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Final Mesh Output</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4>Single View to 3D</h4>
+              <p>Single Image to 3D reconstruction implementation.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="computer-vision">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/3dVision_Rendering_Basics_with_Pytorch3D" target="_blank" rel="noopener">
+              <div id="carouselPyTorch3D" class="carousel slide" data-ride="carousel" data-interval="3000" style="padding-bottom: 15px; height: 200px;">
+                <div class="carousel-inner" style="height: 100%;">
+                  <div class="carousel-item active" style="height: 100%;">
+                    <img class="d-block w-100" src="https://github.com/darshit-desai/3dVision_Rendering_Basics_with_Pytorch3D/blob/main/images/360render_cow.gif?raw=true" style="height: 200px; object-fit: cover;" alt="360 Cow Render">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>360° Mesh Rendering</small>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 100%;">
+                    <img class="d-block w-100" src="https://github.com/darshit-desai/3dVision_Rendering_Basics_with_Pytorch3D/blob/main/images/retexture_360render.gif?raw=true" style="height: 200px; object-fit: cover;" alt="Retextured Cow">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Texture Mapping</small>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 100%;">
+                    <img class="d-block w-100" src="https://github.com/darshit-desai/3dVision_Rendering_Basics_with_Pytorch3D/blob/main/images/toroid_parametric_360render.gif?raw=true" style="height: 200px; object-fit: cover;" alt="Parametric Toroid">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Parametric Surface</small>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 100%;">
+                    <img class="d-block w-100" src="https://github.com/darshit-desai/3dVision_Rendering_Basics_with_Pytorch3D/blob/main/images/toroid_implicit_360render.gif?raw=true" style="height: 200px; object-fit: cover;" alt="Implicit Toroid">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Implicit Representation</small>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 100%;">
+                    <img class="d-block w-100" src="https://github.com/darshit-desai/3dVision_Rendering_Basics_with_Pytorch3D/blob/main/images/cube_360.gif?raw=true" style="height: 200px; object-fit: cover;" alt="Cube">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Basic Primitives</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4>PyTorch3D Rendering Basics</h4>
+              <p>PyTorch3D rendering and visualization basics.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="computer-vision">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/Ball-trajectory-curve-and-landing-point-calculation-from-video-using-OpenCV-python" target="_blank" rel="noopener">
+              <img class="project-media" src="https://user-images.githubusercontent.com/36150235/221688354-119d82dd-ca80-4d02-98d5-0579a40755dd.gif" style="padding-bottom: 15px; width: 100%; max-width: 100%; height: 200px; object-fit: cover;" alt="Ball Trajectory">
+              <h4>Ball Trajectory Tracking</h4>
+              <p>Ball trajectory curve and landing point calculation from video using OpenCV Python.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="computer-vision">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/Image-Segmentation-Using-SLIC-Superpixels" target="_blank" rel="noopener">
+              <div id="carousel-slic" class="carousel slide" data-ride="carousel" data-interval="4500">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="assets/img/slic/1_original_input.png" alt="Original Input" style="height: 200px; object-fit: contain; background-color: white;">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <p style="margin: 0; font-size: 0.9em;">Original MSRC Dataset Input Image</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/img/slic/2_kmeans_clusters.png" alt="K-Means Clusters" style="height: 200px; object-fit: contain; background-color: white;">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <p style="margin: 0; font-size: 0.9em;">K-Means Cluster Centers Visualization</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/img/slic/3_kmeans_segmented.png" alt="K-Means Segmented" style="height: 200px; object-fit: contain; background-color: white;">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <p style="margin: 0; font-size: 0.9em;">K-Means Color Clustered Image</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/img/slic/4_slic_superpixels.png" alt="SLIC Superpixels" style="height: 200px; object-fit: contain; background-color: white;">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <p style="margin: 0; font-size: 0.9em;">SLIC Algorithm Superpixel Segmentation</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/img/slic/5_superpixel_boundaries.png" alt="Superpixel Boundaries" style="height: 200px; object-fit: contain; background-color: white;">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <p style="margin: 0; font-size: 0.9em;">Superpixel Boundary Visualization</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/img/slic/6_superpixel_patches.png" alt="Superpixel Patches" style="height: 200px; object-fit: contain; background-color: white;">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <p style="margin: 0; font-size: 0.9em;">Extracted Superpixel Patches for VGG16</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/img/slic/7_training_loss.png" alt="Training Loss" style="height: 200px; object-fit: contain; background-color: white;">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <p style="margin: 0; font-size: 0.9em;">VGG16 Network Training Loss Curve</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/img/slic/8_final_segmentation.png" alt="Final Result" style="height: 200px; object-fit: contain; background-color: white;">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <p style="margin: 0; font-size: 0.9em;">Final Semantic Segmentation Result</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4>Image Segmentation SLIC</h4>
+              <p>Implementation of VGG16 network to segment images using SLIC Superpixels.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="computer-vision">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/Meta-Learning-Based-INR-" target="_blank" rel="noopener">
+              <iframe src="https://docs.google.com/viewer?url=https://github.com/darshit-desai/Meta-Learning-Based-INR-/raw/main/semanticsforinr_4408221_76045386_Meta%2520Learning%2520for%2520Feature%2520Grid_Based_INRs.pdf&embedded=true" style="width: 100%; height: 200px; border: none; padding-bottom: 15px;" frameborder="0"></iframe>
+              <h4>Meta-Learning Based INR</h4>
+              <p>Meta Learning Based Implicit Neural Representations combined with Grid-Based INR for CMSC828I final project.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="computer-vision">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/NeRF-VolumeRendering-3DVision" target="_blank" rel="noopener">
+              <div id="carouselNeRF" class="carousel slide" data-ride="carousel" data-interval="3000" style="padding-bottom: 15px; height: 200px;">
+                <div class="carousel-inner" style="height: 100%;">
+                  <div class="carousel-item active" style="height: 100%;">
+                    <img class="d-block w-100" src="https://github.com/darshit-desai/NeRF-VolumeRendering-3DVision/blob/main/images/part_1.gif?raw=true" style="height: 200px; object-fit: cover;" alt="Volume Rendering">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Volume Rendering: Box</small>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 100%;">
+                    <img class="d-block w-100" src="https://github.com/darshit-desai/NeRF-VolumeRendering-3DVision/blob/main/images/part_2.gif?raw=true" style="height: 200px; object-fit: cover;" alt="Optimized Volume">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>Optimized Implicit Volume</small>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 100%;">
+                    <img class="d-block w-100" src="https://github.com/darshit-desai/NeRF-VolumeRendering-3DVision/blob/main/images/part_3.gif?raw=true" style="height: 200px; object-fit: cover;" alt="NeRF">
+                    <div class="carousel-caption d-block" style="background: rgba(0,0,0,0.6); bottom: 0; left: 0; right: 0; padding: 5px;">
+                      <small>NeRF: Bulldozer</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4>NeRF Volume Rendering</h4>
+              <p>Neural Radiance Fields volume rendering for 3D vision applications.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- PATH PLANNING PROJECTS -->
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="path-planning">
           <div class="icon-box project-card">
-            <a href="https://github.com/darshit-desai/Astar-algorithm-implementation-for-a-non-holonomic-mobile-robot?tab=readme-ov-file#animation-of-the-node-exploration-black-and-the-path-taken-green-line-with-the-obstacle-map-red" target="_blank" rel="noopener">
-              <video class="project-media" src="https://user-images.githubusercontent.com/36150235/227049076-11690fb6-3d85-42af-98e3-37499323dd9e.mp4" autoplay muted loop playsinline style="padding-bottom: 15px"></video>
-              <h4>A* Path Planning — Non‑Holonomic Robot</h4>
-              <p>A* for a non‑holonomic mobile robot on a 2D obstacle map; the animation shows node exploration (black) and the computed path (green).</p>
+            <a href="https://github.com/darshit-desai/Astar-algorithm-implementation-for-a-non-holonomic-mobile-robot" target="_blank" rel="noopener">
+              <video class="project-media" src="https://user-images.githubusercontent.com/36150235/227049076-11690fb6-3d85-42af-98e3-37499323dd9e.mp4" autoplay muted loop playsinline style="padding-bottom: 15px; width: 100%; max-width: 100%; height: 200px; object-fit: cover;"></video>
+              <h4>A* Non-Holonomic Robot</h4>
+              <p>A* algorithm implementation for a non-holonomic mobile robot with obstacle map navigation.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="path-planning">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/Djikstra-algorithm-implementation-for-a-point-robot" target="_blank" rel="noopener">
+              <video class="project-media" src="https://user-images.githubusercontent.com/36150235/224757654-1a1cd86d-50ba-445b-95d8-966a8269bc55.mp4" autoplay muted loop playsinline style="padding-bottom: 15px; width: 100%; max-width: 100%; height: 200px; object-fit: cover;"></video>
+              <h4>Dijkstra Point Robot</h4>
+              <p>Dijkstra algorithm implementation for a point robot with obstacle map navigation.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECTS WITH OPENGRAPH/PLACEHOLDER IMAGES -->
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="computer-vision">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/3D-Vision-Paper-Reviews" target="_blank" rel="noopener">
+              <img class="project-media" src="https://opengraph.githubassets.com/1/darshit-desai/3D-Vision-Paper-Reviews" style="padding-bottom: 15px; width: 100%; max-width: 100%; height: 200px; object-fit: cover;" alt="3D Vision Reviews">
+              <h4>3D Vision Paper Reviews</h4>
+              <p>Paper reviews on state-of-the-art 3D Computer Vision topics in SfM, Dense Visual SLAM, Multi-view geometry, and Point Cloud Processing.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="cpp-ros">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/Pick-and-place-robot-sequential-algorithm-using-C-" target="_blank" rel="noopener">
+              <img class="project-media" src="https://opengraph.githubassets.com/1/darshit-desai/Pick-and-place-robot-sequential-algorithm-using-C-" style="padding-bottom: 15px; width: 100%; max-width: 100%; height: 200px; object-fit: cover;" alt="Pick and Place">
+              <h4>Pick and Place Robot</h4>
+              <p>Sequential algorithm for pick and place robot using C++.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="cpp-ros">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/TestDrivenDev-PIDcontrol" target="_blank" rel="noopener">
+              <img class="project-media" src="https://opengraph.githubassets.com/1/darshit-desai/TestDrivenDev-PIDcontrol" style="padding-bottom: 15px; width: 100%; max-width: 100%; height: 200px; object-fit: cover;" alt="TDD PID">
+              <h4>Test-Driven PID Control</h4>
+              <p>A PID control program for Acme Robotics using test driven development.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-categories="cpp-ros">
+          <div class="icon-box project-card">
+            <a href="https://github.com/darshit-desai/TestDrivenDev-PIDcontrol-Pair1" target="_blank" rel="noopener">
+              <img class="project-media" src="https://opengraph.githubassets.com/1/darshit-desai/TestDrivenDev-PIDcontrol-Pair1" style="padding-bottom: 15px; width: 100%; max-width: 100%; height: 200px; object-fit: cover;" alt="TDD PID Pair">
+              <h4>Test-Driven PID Control Pair</h4>
+              <p>Pair programming implementation of PID control using test driven development.</p>
             </a>
           </div>
         </div>
@@ -127,7 +790,7 @@
       </div>
 
       <!-- Presentation Subsection -->
-      <div class="section-title mt-5">
+      <div class="section-title mt-5" id="presentation">
         <h2></h2>
         <p>Project Presentation</p>
       </div>
