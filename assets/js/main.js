@@ -55,6 +55,14 @@
     var initial_nav = window.location.hash;
     // Extract just the section ID, remove query parameters like ?filter=...
     var sectionId = initial_nav.split('?')[0];
+    
+    // Map subsection anchors to their parent sections
+    if (sectionId === '#robotics-projects' || sectionId === '#project-presentation') {
+      sectionId = '#projects';
+    } else if (sectionId === '#work-experience' || sectionId === '#educational-lineage') {
+      sectionId = '#about';
+    }
+    
     if ($(sectionId).length) {
       $('#header').addClass('header-top');
       $('.nav-menu .active, .mobile-nav .active').removeClass('active');

@@ -38,13 +38,22 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/lighttheme.css" rel="stylesheet">
 
-  <script>
-    window.onload = function() {
-      if(!window.location.hash || window.location.hash === '#') {
-        window.location.hash = '#projects';
-      }
+  <style>
+    .section-title {
+      position: relative;
     }
-  </script>
+    .section-title .heading-link {
+      opacity: 0;
+      margin-left: 8px;
+      transition: opacity 0.2s;
+      color: #149ddd;
+      text-decoration: none;
+      font-size: 0.8em;
+    }
+    .section-title:hover .heading-link {
+      opacity: 1;
+    }
+  </style>
 
   <!-- =======================================================
   * Template Name: Personal - v2.2.0
@@ -82,7 +91,7 @@
 
       <div class="section-title" id="robotics-projects">
         <h2></h2>
-        <p>Robotics Projects (WIP)</p>
+        <p>Robotics Projects (WIP)<a href="#robotics-projects" class="heading-link" aria-label="Link to Robotics Projects section"><i class="bx bx-link-alt"></i></a></p>
       </div>
       <hr>
 
@@ -790,9 +799,9 @@
       </div>
 
       <!-- Presentation Subsection -->
-      <div class="section-title mt-5" id="presentation">
+      <div class="section-title mt-5" id="project-presentation">
         <h2></h2>
-        <p>Project Presentation</p>
+        <p>Project Presentation<a href="#project-presentation" class="heading-link" aria-label="Link to Project Presentation section"><i class="bx bx-link-alt"></i></a></p>
       </div>
       <hr>
 
@@ -849,9 +858,11 @@
             }
           });
           
-          // Update URL hash (do this last to avoid triggering reloads)
-          if (window.location.hash !== '#projects?filter=' + filterValue) {
-            window.location.hash = '#projects?filter=' + filterValue;
+          // Always update URL to filter format when a filter is applied
+          // This ensures the filter persists on refresh, even when coming from #robotics-projects
+          const newHash = '#projects?filter=' + filterValue;
+          if (window.location.hash !== newHash) {
+            window.location.hash = newHash;
           }
         }
 
@@ -867,15 +878,27 @@
         // Apply initial filter from URL hash
         const hash = window.location.hash;
         let initialFilter = 'all';
+        let shouldUpdateHash = false;
         
         if (hash && hash.includes('filter=')) {
           const filterMatch = hash.match(/filter=([^&]+)/);
           if (filterMatch && filterMatch[1]) {
             initialFilter = filterMatch[1];
+            shouldUpdateHash = true;
           }
         }
         
-        applyFilter(initialFilter);
+        // Only apply filter if we're on the projects section with a filter parameter
+        // This prevents interfering with navigation to other anchors like #robotics-projects
+        if (hash.startsWith('#projects') || shouldUpdateHash) {
+          applyFilter(initialFilter);
+        } else {
+          // Show all items without changing the hash for other section anchors
+          items.forEach(item => item.classList.remove('filtered-out'));
+          filterButtons.forEach(btn => btn.classList.remove('filter-active'));
+          const allButton = document.querySelector('[data-filter="all"]');
+          if (allButton) allButton.classList.add('filter-active');
+        }
 
         // Maze carousel GIF rotation (configurable durations)
         const mazeGifs = document.querySelectorAll('.maze-gif');
