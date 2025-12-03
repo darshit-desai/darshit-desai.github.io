@@ -59,7 +59,8 @@
     // Map subsection anchors to their parent sections
     if (sectionId === '#robotics-projects' || sectionId === '#project-presentation') {
       sectionId = '#projects';
-    } else if (sectionId === '#work-experience' || sectionId === '#educational-lineage') {
+    } else if (sectionId === '#work-experience' || sectionId === '#educational-lineage' ||
+               sectionId.startsWith('#work-experience-') || sectionId.startsWith('#educational-lineage-')) {
       sectionId = '#about';
     }
     
